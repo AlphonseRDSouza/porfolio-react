@@ -10,11 +10,12 @@
   text-decoration: none;
 }
 
-/* Variables */
+/* css Variables */
 :root {
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -22,7 +23,7 @@
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
-  --container-width-sm: 88%;
+  --container-width-sm: 90%;
 }
 
 html {
@@ -116,7 +117,7 @@ img {
   object-fit: cover;
 }
 
-/* ===================MEDIA QUESRIES (MEDIUM DEVICES ===========*/
+/* ===================MEDIA QUESRIES (MEDIUM DEVICES, tablets ===========*/
 @media screen and(max-width: 1024px) {
   .container {
     width: var (var(--container-width-md))
@@ -127,13 +128,13 @@ img {
   }
 }
 
-/* ===================MEDIA QUESRIES (SMALL DEVICES ===========*/
+/* ===================MEDIA QUESRIES (SMALL DEVICES, mobile phones ===========*/
 @media screen and(max-width: 600px) {
   .container {
     width: var (var(--container-width-sm))
   }
 
   section>h2 {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
