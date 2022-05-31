@@ -58,11 +58,12 @@ h5 {
 }
 
 h1 {
-  font-size: 2.5 rem;
+  font-size: 2.5rem;
 }
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
 section>h2,
@@ -118,9 +119,9 @@ img {
 }
 
 /* ===================MEDIA QUESRIES (MEDIUM DEVICES, tablets ===========*/
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
-    width: var (var(--container-width-md))
+    width: var(--container-width-md);
   }
 
   section {
@@ -129,9 +130,9 @@ img {
 }
 
 /* ===================MEDIA QUESRIES (SMALL DEVICES, mobile phones ===========*/
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 600px) {
   .container {
-    width: var (var(--container-width-sm))
+    width: var(--container-width-sm)
   }
 
   section>h2 {
