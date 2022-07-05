@@ -4,48 +4,62 @@ import { BiCheck } from "react-icons/bi";
 
 const UIDesignServices = [
   {
+    id: 1,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 2,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 3,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 4,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 5,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 6,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
 ];
 
 const webdevelopmentServices = [
   {
+    id: 11,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 12,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 13,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 14,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 15,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 16,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 17,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
+    id: 18,
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
 ];
@@ -64,7 +78,7 @@ const Services = () => {
           <ul className="service__list">
             {UIDesignServices.map((service) => {
               return (
-                <li>
+                <li key={service.id}>
                   <BiCheck className="service__list-icon" />
                   <p>{service.content}</p>
                 </li>
@@ -80,7 +94,7 @@ const Services = () => {
           <ul className="service__list">
             {webdevelopmentServices.map((service) => {
               return (
-                <li>
+                <li key={service.id}>
                   <BiCheck className="service__list-icon" />
                   <p>{service.content}</p>
                 </li>
@@ -94,9 +108,9 @@ const Services = () => {
             <h3>Content Creation</h3>
           </div>
           <ul className="service__list">
-            {UIDesignServices.map((service) => {
+            {UIDesignServices.map((service, i) => {
               return (
-                <li>
+                <li key={`${service.id}_${i}`}>
                   <BiCheck className="service__list-icon" />
                   <p>{service.content}</p>
                 </li>
