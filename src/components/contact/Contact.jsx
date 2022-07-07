@@ -43,6 +43,25 @@ const contactMedium = [
 ];
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_g0895jn",
+        "template_sr986yr",
+        form.current,
+        "6KdXeMvKW-c8FqOSR"
+      ).then((result) => {
+          console.log(result.text);
+        },(error) => {
+          console.log(error.text);
+        }
+      );
+      //To reset content
+      e.target.reset();
+  };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
